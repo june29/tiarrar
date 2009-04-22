@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 120%;
+  padding-left: 10px;
+  color: #fff;
+  background-color: #000;
+  border-bottom: 3px solid #999;
+}
+
+h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form#searchform {
+  text-align: right;
+  padding-right: 5px;
+}
+
+ul {
+  padding-left: 30px;
+  list-style-type: disc;
+}
+
+ul#groups {
+  padding: 0 20px 20px;
+}
+
+li.group {
+  display: inline;
+  margin: 3px;
+  padding: 5px;
+  background-color: #333;
+}
+
+li.group a {
+  color: #fff;
+}
+
+.published {
+  font-size: 80%;
+  color: #333;
+}

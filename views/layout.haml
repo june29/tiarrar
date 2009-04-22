@@ -1,0 +1,24 @@
+!!! XML
+!!! 1.1
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %title Tiarrar
+    %meta{:content => "width=480", :name => "viewport"}
+    %link{:href => "/stylesheets/style.css",  :type => "text/css", :rel => "stylesheet"}
+    %link{:href => "/stylesheets/iphone.css", :type => "text/css", :rel => "stylesheet", :media => "only screen and (max-device-width:480px)"}
+  %body
+    #header
+      %h1
+        %a{:href => "/", :title => "Tiarrar"} Tiarrar
+        - if @group
+          \/
+          %a{:href => "/groups/#{@group}", :title => "Tiarrar / #{@group}"}= @group
+        - elsif @word
+          \/ search /
+          %a{:href => "/search/#{@word}", :title => "Tiarrar / search /#{@word}"}= @word
+    #main
+      %form#searchform{:action => "/search/", :method => "get"}
+        %div
+          %input#s{:type => "text", :name => "word", :value => ""}
+          %input#searchsubmit{:type => "submit", :value => "Search"}
+      = yield

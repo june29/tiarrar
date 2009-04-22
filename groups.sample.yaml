@@ -1,0 +1,11 @@
+group1:
+  - user1
+  - user2
+  - user3
+group2:
+  - user4
+  - user5
+group3:
+  - user1
+  - user4
+  - user5

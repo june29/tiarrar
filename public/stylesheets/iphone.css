@@ -1,0 +1,21 @@
+h1 {
+  font-size: 180%;
+}
+
+form#searchform {
+  top: 10px;
+}
+
+form#searchform input {
+  margin: 10px 5px;
+  font-size: 100%;
+  line-height: 150%;
+}
+
+ul#groups {
+  padding-left: 50px;
+}
+
+li.group {
+  font-size: 160%;
+}

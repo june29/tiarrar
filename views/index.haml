@@ -1,0 +1,14 @@
+%ul#groups
+  - @groups.each do |group|
+    %li.group
+      %a{:href => "/groups/#{group}", :title => group}= group
+
+%ul#statuses
+  - @statuses.each do |status|
+    %li.status
+      %span.user
+        %a{:href => "http://twitter.com/#{status[:user]}", :title => "Twitter / #{status[:user]}"}= status[:user]
+      %span.message
+        =status[:message]
+      %span.published
+        ="[#{status[:time]}]"
